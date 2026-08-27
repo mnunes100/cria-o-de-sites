@@ -1,1 +1,1765 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Site oficial de Luiz Omar, candidato a Deputado Federal pelo União Brasil nas Eleições 2026.">
+
+    <title>Luiz Omar 4418 | Deputado Federal</title>
+
+
+    <style>
+
+        /* =====================================================
+           CONFIGURAÇÕES GERAIS
+        ===================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+            background: #ffffff;
+
+            color: #172554;
+
+            line-height: 1.6;
+        }
+
+
+        img {
+            max-width: 100%;
+
+            display: block;
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+
+
+        .container {
+            width: 92%;
+
+            max-width: 1200px;
+
+            margin: 0 auto;
+        }
+
+
+
+        /* =====================================================
+           CORES
+        ===================================================== */
+
+        :root {
+
+            --azul: #123c9c;
+
+            --azul-escuro: #09265f;
+
+            --azul-claro: #1f5bc6;
+
+            --amarelo: #f5c400;
+
+            --amarelo-claro: #ffd83d;
+
+            --branco: #ffffff;
+
+            --cinza: #f4f6fa;
+
+            --texto: #172554;
+
+        }
+
+
+
+        /* =====================================================
+           CABEÇALHO
+        ===================================================== */
+
+        header {
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 999;
+
+            background: var(--branco);
+
+            box-shadow:
+                0 2px 15px rgba(0, 0, 0, 0.12);
+        }
+
+
+        .topo {
+
+            min-height: 90px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+
+        .marca {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 18px;
+        }
+
+
+        .logo-partido {
+
+            width: 135px;
+
+            height: auto;
+        }
+
+
+        .nome-topo {
+
+            border-left: 3px solid var(--amarelo);
+
+            padding-left: 18px;
+        }
+
+
+        .nome-topo strong {
+
+            display: block;
+
+            color: var(--azul);
+
+            font-size: 25px;
+
+            line-height: 1;
+        }
+
+
+        .nome-topo span {
+
+            display: block;
+
+            color: #555;
+
+            font-size: 13px;
+
+            font-weight: bold;
+
+            margin-top: 5px;
+
+            text-transform: uppercase;
+        }
+
+
+
+        /* =====================================================
+           MENU
+        ===================================================== */
+
+        nav {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 25px;
+        }
+
+
+        nav a {
+
+            color: var(--azul-escuro);
+
+            font-weight: bold;
+
+            font-size: 15px;
+
+            transition: 0.2s;
+        }
+
+
+        nav a:hover {
+
+            color: var(--amarelo);
+
+        }
+
+
+        .menu-button {
+
+            display: none;
+
+            border: none;
+
+            background: transparent;
+
+            color: var(--azul);
+
+            font-size: 30px;
+
+            cursor: pointer;
+        }
+
+
+
+        /* =====================================================
+           HERO / ÁREA PRINCIPAL
+        ===================================================== */
+
+        .hero {
+
+            position: relative;
+
+            overflow: hidden;
+
+            background:
+                linear-gradient(
+                    120deg,
+                    var(--azul-escuro),
+                    var(--azul)
+                );
+
+            color: white;
+        }
+
+
+        .hero::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 500px;
+
+            height: 500px;
+
+            background: var(--amarelo);
+
+            opacity: 0.10;
+
+            border-radius: 50%;
+
+            right: -200px;
+
+            top: -200px;
+        }
+
+
+        .hero-content {
+
+            min-height: 650px;
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            align-items: center;
+
+            gap: 40px;
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        .hero-text {
+
+            padding: 50px 0;
+        }
+
+
+        .partido {
+
+            display: inline-block;
+
+            background: var(--amarelo);
+
+            color: #111;
+
+            padding: 8px 18px;
+
+            border-radius: 30px;
+
+            font-weight: bold;
+
+            font-size: 14px;
+
+            margin-bottom: 20px;
+        }
+
+
+        .hero h1 {
+
+            font-size: clamp(50px, 7vw, 82px);
+
+            line-height: 0.95;
+
+            margin-bottom: 18px;
+
+            text-transform: uppercase;
+
+            letter-spacing: -2px;
+        }
+
+
+        .cargo {
+
+            font-size: 25px;
+
+            font-weight: bold;
+
+            margin-bottom: 10px;
+        }
+
+
+        .numero {
+
+            display: inline-block;
+
+            font-size: 58px;
+
+            line-height: 1;
+
+            font-weight: 900;
+
+            color: var(--amarelo);
+
+            margin: 15px 0 25px;
+        }
+
+
+        .hero-description {
+
+            font-size: 18px;
+
+            max-width: 550px;
+
+            margin-bottom: 30px;
+        }
+
+
+        .botao {
+
+            display: inline-block;
+
+            background: var(--amarelo);
+
+            color: #111;
+
+            padding: 15px 28px;
+
+            border-radius: 8px;
+
+            font-weight: bold;
+
+            transition: 0.2s;
+        }
+
+
+        .botao:hover {
+
+            background: var(--amarelo-claro);
+
+            transform: translateY(-2px);
+        }
+
+
+        .hero-photo {
+
+            display: flex;
+
+            align-items: end;
+
+            justify-content: center;
+
+            align-self: stretch;
+
+            padding-top: 35px;
+        }
+
+
+        .hero-photo img {
+
+            width: 100%;
+
+            max-width: 560px;
+
+            max-height: 610px;
+
+            object-fit: contain;
+
+            object-position: bottom;
+
+            filter: drop-shadow(
+                0 15px 25px rgba(0,0,0,0.25)
+            );
+        }
+
+
+
+        /* =====================================================
+           BARRA AMARELA
+        ===================================================== */
+
+        .barra-amarela {
+
+            height: 10px;
+
+            background: var(--amarelo);
+        }
+
+
+
+        /* =====================================================
+           SEÇÕES
+        ===================================================== */
+
+        .section {
+
+            padding: 80px 0;
+        }
+
+
+        .section-title {
+
+            text-align: center;
+
+            margin-bottom: 45px;
+        }
+
+
+        .section-title h2 {
+
+            font-size: 42px;
+
+            color: var(--azul);
+
+            margin-bottom: 10px;
+        }
+
+
+        .section-title .linha {
+
+            width: 80px;
+
+            height: 5px;
+
+            background: var(--amarelo);
+
+            margin: 0 auto;
+        }
+
+
+
+        /* =====================================================
+           SOBRE / BIOGRAFIA
+        ===================================================== */
+
+        .sobre {
+
+            background: white;
+        }
+
+
+        .sobre-grid {
+
+            display: grid;
+
+            grid-template-columns: 0.8fr 1.2fr;
+
+            gap: 60px;
+
+            align-items: center;
+        }
+
+
+        .sobre-imagem {
+
+            background: var(--cinza);
+
+            padding: 20px;
+
+            border-radius: 20px;
+        }
+
+
+        .sobre-imagem img {
+
+            width: 100%;
+
+            border-radius: 12px;
+        }
+
+
+        .sobre-texto h3 {
+
+            color: var(--azul);
+
+            font-size: 30px;
+
+            margin-bottom: 20px;
+        }
+
+
+        .sobre-texto p {
+
+            margin-bottom: 18px;
+
+            color: #333;
+
+            font-size: 17px;
+        }
+
+
+        .dados {
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 15px;
+
+            margin-top: 25px;
+        }
+
+
+        .dado {
+
+            background: var(--cinza);
+
+            border-left: 5px solid var(--amarelo);
+
+            padding: 15px;
+
+            border-radius: 6px;
+        }
+
+
+        .dado strong {
+
+            display: block;
+
+            color: var(--azul);
+
+            font-size: 14px;
+
+            text-transform: uppercase;
+        }
+
+
+        .dado span {
+
+            color: #333;
+
+            font-weight: bold;
+        }
+
+
+
+        /* =====================================================
+           CULTURA PARAENSE
+        ===================================================== */
+
+        .cultura {
+
+            background: var(--azul-escuro);
+
+            padding: 25px 0;
+        }
+
+
+        .cultura img {
+
+            width: 100%;
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            border-radius: 12px;
+        }
+
+
+
+        /* =====================================================
+           PROPOSTAS
+        ===================================================== */
+
+        .propostas {
+
+            background: var(--cinza);
+        }
+
+
+        .cards {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 25px;
+        }
+
+
+        .card {
+
+            background: white;
+
+            border-radius: 15px;
+
+            padding: 30px;
+
+            border-top: 6px solid var(--azul);
+
+            box-shadow:
+                0 5px 20px rgba(0,0,0,0.07);
+
+            transition: 0.2s;
+        }
+
+
+        .card:hover {
+
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 10px 25px rgba(0,0,0,0.12);
+        }
+
+
+        .card-number {
+
+            color: var(--amarelo);
+
+            background: var(--azul);
+
+            width: 48px;
+
+            height: 48px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 50%;
+
+            font-weight: bold;
+
+            margin-bottom: 18px;
+        }
+
+
+        .card h3 {
+
+            color: var(--azul);
+
+            font-size: 23px;
+
+            margin-bottom: 10px;
+        }
+
+
+        .card p {
+
+            color: #444;
+        }
+
+
+
+        /* =====================================================
+           REDES SOCIAIS
+        ===================================================== */
+
+        .redes {
+
+            text-align: center;
+
+            background: white;
+        }
+
+
+        .redes-container {
+
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 20px;
+        }
+
+
+        .rede {
+
+            min-width: 230px;
+
+            padding: 18px 25px;
+
+            background: var(--azul);
+
+            color: white;
+
+            border-radius: 10px;
+
+            font-weight: bold;
+
+            transition: 0.2s;
+        }
+
+
+        .rede:hover {
+
+            background: var(--azul-escuro);
+
+            transform: translateY(-3px);
+        }
+
+
+        .rede span {
+
+            display: block;
+
+            color: var(--amarelo);
+
+            margin-top: 3px;
+
+            font-size: 14px;
+        }
+
+
+
+        /* =====================================================
+           INFORMAÇÕES DA CANDIDATURA
+        ===================================================== */
+
+        .informacoes {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--azul),
+                    var(--azul-escuro)
+                );
+
+            color: white;
+
+            text-align: center;
+        }
+
+
+        .informacoes h2 {
+
+            font-size: 35px;
+
+            margin-bottom: 30px;
+        }
+
+
+        .info-box {
+
+            max-width: 750px;
+
+            margin: auto;
+
+            background: rgba(255,255,255,0.08);
+
+            border-radius: 15px;
+
+            padding: 30px;
+        }
+
+
+        .info-item {
+
+            padding: 12px;
+
+            border-bottom: 1px solid
+                rgba(255,255,255,0.15);
+        }
+
+
+        .info-item:last-child {
+
+            border-bottom: none;
+        }
+
+
+        .info-item strong {
+
+            color: var(--amarelo);
+
+        }
+
+
+
+        /* =====================================================
+           RODAPÉ
+        ===================================================== */
+
+        footer {
+
+            background: #071b45;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 35px 0;
+        }
+
+
+        footer .nome-footer {
+
+            color: var(--amarelo);
+
+            font-size: 23px;
+
+            font-weight: bold;
+
+            margin-bottom: 10px;
+        }
+
+
+        footer p {
+
+            margin: 5px 0;
+
+            font-size: 14px;
+        }
+
+
+        .aviso {
+
+            margin-top: 20px;
+
+            padding-top: 20px;
+
+            border-top: 1px solid
+                rgba(255,255,255,0.15);
+
+            font-size: 12px;
+
+            color: #d7d7d7;
+        }
+
+
+
+        /* =====================================================
+           RESPONSIVIDADE - CELULAR
+        ===================================================== */
+
+        @media (max-width: 850px) {
+
+            .menu-button {
+
+                display: block;
+            }
+
+
+            nav {
+
+                display: none;
+
+                position: absolute;
+
+                top: 90px;
+
+                left: 0;
+
+                width: 100%;
+
+                background: white;
+
+                flex-direction: column;
+
+                gap: 0;
+
+                box-shadow:
+                    0 5px 15px rgba(0,0,0,0.1);
+            }
+
+
+            nav.active {
+
+                display: flex;
+            }
+
+
+            nav a {
+
+                padding: 17px 25px;
+
+                border-bottom: 1px solid #eee;
+            }
+
+
+            .hero-content {
+
+                grid-template-columns: 1fr;
+
+                text-align: center;
+
+                min-height: auto;
+            }
+
+
+            .hero-text {
+
+                padding: 60px 0 20px;
+            }
+
+
+            .hero-photo {
+
+                padding-top: 0;
+            }
+
+
+            .hero-photo img {
+
+                max-height: 500px;
+            }
+
+
+            .sobre-grid {
+
+                grid-template-columns: 1fr;
+
+                gap: 35px;
+            }
+
+
+            .cards {
+
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 550px) {
+
+            .logo-partido {
+
+                width: 95px;
+            }
+
+
+            .nome-topo {
+
+                padding-left: 10px;
+            }
+
+
+            .nome-topo strong {
+
+                font-size: 20px;
+            }
+
+
+            .nome-topo span {
+
+                font-size: 10px;
+            }
+
+
+            .hero h1 {
+
+                font-size: 48px;
+            }
+
+
+            .numero {
+
+                font-size: 50px;
+            }
+
+
+            .section {
+
+                padding: 60px 0;
+            }
+
+
+            .section-title h2 {
+
+                font-size: 32px;
+            }
+
+
+            .dados {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .sobre-texto h3 {
+
+                font-size: 26px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         CABEÇALHO
+    ====================================================== -->
+
+    <header>
+
+        <div class="container topo">
+
+
+            <div class="marca">
+
+                <img
+                    class="logo-partido"
+                    src="imagens/uniao-brasil.jpg"
+                    alt="União Brasil">
+
+
+                <div class="nome-topo">
+
+                    <strong>LUIZ OMAR</strong>
+
+                    <span>
+                        Deputado Federal • 4418
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <button
+                class="menu-button"
+                onclick="abrirMenu()"
+                aria-label="Abrir menu">
+
+                ☰
+
+            </button>
+
+
+            <nav id="menu">
+
+                <a href="#inicio">
+                    Início
+                </a>
+
+                <a href="#sobre">
+                    Sobre
+                </a>
+
+                <a href="#propostas">
+                    Propostas
+                </a>
+
+                <a href="#redes">
+                    Redes sociais
+                </a>
+
+                <a href="#contato">
+                    Informações
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <main id="inicio">
+
+
+        <section class="hero">
+
+            <div class="container hero-content">
+
+
+                <div class="hero-text">
+
+                    <div class="partido">
+                        UNIÃO BRASIL
+                    </div>
+
+
+                    <h1>
+                        LUIZ<br>
+                        OMAR
+                    </h1>
+
+
+                    <p class="cargo">
+                        Candidato a Deputado Federal
+                    </p>
+
+
+                    <div class="numero">
+                        4418
+                    </div>
+
+
+                    <p class="hero-description">
+                        Informações sobre Luiz Omar,
+                        sua trajetória, candidatura e
+                        propostas para as Eleições 2026.
+                    </p>
+
+
+                    <a
+                        href="#sobre"
+                        class="botao">
+
+                        Conheça Luiz Omar
+
+                    </a>
+
+                </div>
+
+
+                <div class="hero-photo">
+
+                    <img
+                        src="imagens/luiz-omar.jpg"
+                        alt="Luiz Omar">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <div class="barra-amarela"></div>
+
+
+
+        <!-- =================================================
+             SOBRE
+        ================================================== -->
+
+        <section
+            id="sobre"
+            class="section sobre">
+
+            <div class="container">
+
+
+                <div class="section-title">
+
+                    <h2>
+                        Sobre Luiz Omar
+                    </h2>
+
+                    <div class="linha"></div>
+
+                </div>
+
+
+                <div class="sobre-grid">
+
+
+                    <div class="sobre-imagem">
+
+                        <img
+                            src="imagens/luiz-omar.jpg"
+                            alt="Luiz Omar">
+
+                    </div>
+
+
+                    <div class="sobre-texto">
+
+                        <h3>
+                            Trajetória
+                        </h3>
+
+
+                        <p>
+
+                            Luiz Omar (União) é candidato em
+                            2026 à Câmara dos Deputados pelo
+                            estado do Pará, com o número 4418.
+
+                        </p>
+
+
+                        <p>
+
+                            Natural de Belém (PA), nasceu em
+                            1958 e declara a profissão de
+                            marinheiro civil, canoeiro,
+                            embarcado e assemelhados.
+
+                        </p>
+
+
+                        <p>
+
+                            Possui escolaridade superior
+                            completa e é casado.
+
+                        </p>
+
+
+                        <div class="dados">
+
+
+                            <div class="dado">
+
+                                <strong>
+                                    Nome
+                                </strong>
+
+                                <span>
+                                    Luiz Omar
+                                </span>
+
+                            </div>
+
+
+                            <div class="dado">
+
+                                <strong>
+                                    Cargo
+                                </strong>
+
+                                <span>
+                                    Deputado Federal
+                                </span>
+
+                            </div>
+
+
+                            <div class="dado">
+
+                                <strong>
+                                    Número
+                                </strong>
+
+                                <span>
+                                    4418
+                                </span>
+
+                            </div>
+
+
+                            <div class="dado">
+
+                                <strong>
+                                    Partido
+                                </strong>
+
+                                <span>
+                                    União Brasil
+                                </span>
+
+                            </div>
+
+
+                            <div class="dado">
+
+                                <strong>
+                                    Estado
+                                </strong>
+
+                                <span>
+                                    Pará
+                                </span>
+
+                            </div>
+
+
+                            <div class="dado">
+
+                                <strong>
+                                    Naturalidade
+                                </strong>
+
+                                <span>
+                                    Belém - PA
+                                </span>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CULTURA
+        ================================================== -->
+
+        <section class="cultura">
+
+            <div class="container">
+
+                <img
+                    src="imagens/cultura-para.jpg"
+                    alt="Cultura e tradições do Pará">
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PROPOSTAS
+        ================================================== -->
+
+        <section
+            id="propostas"
+            class="section propostas">
+
+            <div class="container">
+
+
+                <div class="section-title">
+
+                    <h2>
+                        Propostas
+                    </h2>
+
+                    <div class="linha"></div>
+
+                </div>
+
+
+                <div class="cards">
+
+
+                    <article class="card">
+
+                        <div class="card-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Música e ritmos regionais
+                        </h3>
+
+                        <p>
+                            Valorização e preservação das
+                            manifestações musicais e dos
+                            ritmos regionais do Pará.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="card-number">
+                            02
+                        </div>
+
+                        <h3>
+                            Danças tradicionais
+                        </h3>
+
+                        <p>
+                            Incentivo à preservação e
+                            valorização das danças tradicionais
+                            e manifestações culturais paraenses.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="card-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Artesanato e artes populares
+                        </h3>
+
+                        <p>
+                            Valorização do artesanato e das
+                            expressões de arte popular
+                            presentes no Pará.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="card-number">
+                            04
+                        </div>
+
+                        <h3>
+                            Festas populares e religiosas
+                        </h3>
+
+                        <p>
+                            Reconhecimento das festas populares
+                            e religiosas como parte da história
+                            e da cultura regional.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="card-number">
+                            05
+                        </div>
+
+                        <h3>
+                            Valorização da nossa história
+                        </h3>
+
+                        <p>
+                            Preservação da memória e valorização
+                            da história do Pará.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="card-number">
+                            06
+                        </div>
+
+                        <h3>
+                            Tradições que vêm do povo
+                        </h3>
+
+                        <p>
+                            Valorização das tradições e
+                            manifestações culturais construídas
+                            pelas comunidades paraenses.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             REDES SOCIAIS
+        ================================================== -->
+
+        <section
+            id="redes"
+            class="section redes">
+
+            <div class="container">
+
+
+                <div class="section-title">
+
+                    <h2>
+                        Redes sociais
+                    </h2>
+
+                    <div class="linha"></div>
+
+                </div>
+
+
+                <div class="redes-container">
+
+
+                    <a
+                        class="rede"
+                        href="https://www.instagram.com/luizomarpinheiro/"
+                        target="_blank"
+                        rel="noopener">
+
+                        Instagram
+
+                        <span>
+                            @luizomarpinheiro
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        class="rede"
+                        href="https://www.facebook.com/"
+                        target="_blank"
+                        rel="noopener">
+
+                        Facebook
+
+                        <span>
+                            Luiz Omar Pinheiro
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             INFORMAÇÕES
+        ================================================== -->
+
+        <section
+            id="contato"
+            class="section informacoes">
+
+            <div class="container">
+
+
+                <h2>
+                    Informações da candidatura
+                </h2>
+
+
+                <div class="info-box">
+
+
+                    <div class="info-item">
+
+                        <strong>
+                            Nome:
+                        </strong>
+
+                        Luiz Omar
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <strong>
+                            Cargo:
+                        </strong>
+
+                        Deputado Federal
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <strong>
+                            Número:
+                        </strong>
+
+                        4418
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <strong>
+                            Partido:
+                        </strong>
+
+                        União Brasil
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <strong>
+                            Estado:
+                        </strong>
+
+                        Pará
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <strong>
+                            Instagram:
+                        </strong>
+
+                        @luizomarpinheiro
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <strong>
+                            Facebook:
+                        </strong>
+
+                        Luiz Omar Pinheiro
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         RODAPÉ
+    ====================================================== -->
+
+    <footer>
+
+        <div class="container">
+
+
+            <div class="nome-footer">
+                LUIZ OMAR • 4418
+            </div>
+
+
+            <p>
+                Candidato a Deputado Federal
+            </p>
+
+
+            <p>
+                União Brasil
+            </p>
+
+
+            <p>
+                Pará
+            </p>
+
+
+            <p>
+                CNPJ: 68.610.169/0001-05
+            </p>
+
+
+            <div class="aviso">
+
+                Site com informações da candidatura.
+                Consulte as normas da Justiça Eleitoral
+                aplicáveis à propaganda eleitoral.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT DO MENU
+    ====================================================== -->
+
+    <script>
+
+        function abrirMenu() {
+
+            const menu =
+                document.getElementById("menu");
+
+            menu.classList.toggle("active");
+
+        }
+
+
+        document
+            .querySelectorAll("#menu a")
+            .forEach(function(link) {
+
+                link.addEventListener(
+                    "click",
+                    function() {
+
+                        document
+                            .getElementById("menu")
+                            .classList
+                            .remove("active");
+
+                    }
+                );
+
+            });
+
+    </script>
+
+
+</body>
+
+</html>
